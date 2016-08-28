@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -33,7 +33,7 @@
     </header>
 	<main class="container">
 	  <h1 class="main-tittle">СРЕДСТВА ДЛЯ УХОДА</h1>
-	  <div id="breadcrumb">
+	  <div id="breadcrumb"><!-- Пожалуй breadcrumb лучше сделать классом и перенести в список, а див убрать-->
 	    <ul>
 		  <li>
             <a href="#">Главная</a>
@@ -74,12 +74,15 @@
 		    <input type="submit" value="ПОКАЗАТЬ">
 		</form>
 	  </div>
+	  <!-- Тут в див даем класс скажем goods-list, артиклы все убираем, и вместо них ставим просто дивы с классом good -->
 	  <div class="goods-right">
-	    <article class="traveler">
-		  <img src="http://placehold.it/150x100">
-		  <p>Набор для путешествий<br>"BAXTER OF CALIFORNIA"</p>
-		  <span сlass="coast">2900 РУБ.</span>
-		  <a href="#" class="item-buy">Купить</a>
+	    <!-- Привести все плашки к такому виду -->
+	    <div class="good">
+		    <img src="http://placehold.it/150x100">
+		    <p>Набор для путешествий<br>"BAXTER OF CALIFORNIA"</p>
+		    <span сlass="coast">2900 РУБ.</span>
+		    <a href="#" class="item-buy">Купить</a>
+		</div>
 		<article class="conditioner">
 		  <img src="http://placehold.it/150x100">
 		  <p>Увлажняющий кондиционер<br>"BAXTER OF CALIFORNIA"</p>
